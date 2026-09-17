@@ -6,17 +6,18 @@
 <meta
 name="description"
 content="Formulir prototipe untuk mendaftarkan usaha sebagai penyedia makanan di SisaBaik."
->
+
 <title>Daftar Penyedia | SisaBaik</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a href="#konten-utama">Lewati ke konten utama</a>
+<a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
 
-<header>
-<p><strong>SisaBaik</strong></p>
+<header class="site-header">
+<div class="container header-layout">
+<p class="brand">SisaBaik</p>
 <nav aria-label="Navigasi utama">
-<ul>
+<ul class="nav-list">
 <li><a href="index.html">Beranda</a></li>
 <li>
 <a href="daftar-penyedia.html" aria-current="page">
@@ -26,21 +27,26 @@ Daftar sebagai penyedia
 <li><a href="tawarkan-makanan.html">Tawarkan makanan</a></li>
 </ul>
 </nav>
+</div>
 </header>
 
-<main id="konten-utama" tabindex="-1">
+<main class="container" id="konten-utama" tabindex="-1">
+<div class="page-heading">
 <h1>Daftar sebagai penyedia SisaBaik</h1>
-<p>
-Gunakan data fiktif selama praktikum. Formulir ini belum terhubung ke server dan basis data.
+<p class="lead">
+Gunakan data fiktif selama praktikum. Formulir ini belum terhubung ke
+server dan basis data.
 </p>
-<p id="petunjuk-wajib">Kolom bertanda <strong> *</strong> wajib diisi .</p>
+<p class="required-note" id="petunjuk-wajib">Kolom bertanda <strong> *</strong> wajib diisi .</p>
+</div>
 
 <form
+class="form-card"
 action="daftar-penyedia.html"
 method="get"
-aria-describedby="petunjuk-wajib">
-
-<fieldset>
+aria-describedby="petunjuk-wajib"
+>
+<fieldset class="form-section">
 <legend>Informasi usaha</legend>
 
 <p>
@@ -84,10 +90,12 @@ Jelaskan jenis produk dan jam operasional, maksimal 500 karakter.
 </p>
 </fieldset>
 
-<fieldset>
+<fieldset class="form-section">
 <legend>Penanggung jawab</legend>
 
 <p>
+    
+</p>
 <label for="nama-penanggung-jawab">Nama lengkap *</label><br>
 <input
 type="text"
@@ -99,7 +107,6 @@ maxlength="100"
 required
 >
 </p>
-
 <p>
 <label for="email">Alamat email *</label><br>
 <input
@@ -132,7 +139,7 @@ Gunakan 8-20 karakter berupa angka, spasi, +, atau tanda kurung.
 </p>
 </fieldset>
 
-<fieldset>
+<fieldset class="form-section">
 <legend>Lokasi usaha</legend>
 
 <p>
@@ -171,7 +178,6 @@ maxlength="100"
 required
 >
 </p>
-
 <p>
 <label for="kode-pos">Kode pos *</label><br>
 <input
@@ -184,11 +190,11 @@ pattern="[0-9]{5}"
 aria-describedby="bantuan-kode-pos"
 required
 ><br>
-<small id="bantuan-kode-pos">Masukkan tepat lima digit .</small>
+<small id="bantuan-kode-pos">Masukkan tepat lima digit. </small>
 </p>
 </fieldset>
 
-<fieldset>
+<fieldset class="form-section">
 <legend>Persetujuan</legend>
 <p>
 <input
@@ -197,7 +203,7 @@ id="persetujuan"
 name="persetujuan"
 value="setuju"
 required
->
+
 <label for="persetujuan">
 Saya menyatakan bahwa informasi latihan ini tidak menggunakan
 data pribadi atau data usaha yang sebenarnya. *
@@ -205,13 +211,13 @@ data pribadi atau data usaha yang sebenarnya. *
 </p>
 </fieldset>
 
-<p>
-<button type="submit">Kirim pendaftaran latihan</button>
-<button type="reset">Kosongkan formulir</button>
+<p class="form-actions">
+<button class="button" type="submit">Kirim pendaftaran latihan</button>
+<button class="button button-secondary" type="reset">Kosongkan formulir</button>
 </p>
 </form>
 
-<section aria-labelledby="catatan-prototipe">
+<section class="section" aria-labelledby="catatan-prototipe">
 <h2 id="catatan-prototipe">Apa yang terjadi setelah tombol dikirim ?</h2>
 <p>
 Browser memeriksa atribut validasi HTML terlebih dahulu. Jika semua
@@ -222,8 +228,10 @@ metode sementara ini akan diganti dengan pengiriman ke server.
 </section>
 </main>
 
-<footer>
+<footer class="site-footer">
+<div class="container footer-layout">
 <p>&copy; 2026 SisaBaik - Proyek pembelajaran Pengembangan Web .</p>
+</div>
 </footer>
 </body>
 </html>
