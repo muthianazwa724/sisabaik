@@ -1,15 +1,15 @@
 :root {
---color-primary: #176b4d;
---color-primary-dark: #0f4f39;
---color-primary-soft: #e8f5ef;
---color-accent: #f2b84b;
---color-text: #17211b;
---color-muted: #52615a;
+--color-primary: #1565c0;
+--color-primary-dark: #0d47a1;
+--color-primary-soft: #e3f2fd;
+--color-accent: #00897b;
+--color-text: #1c2b36;
+--color-muted: #546e7a;
 --color-surface: #ffffff;
---color-background: #f5f8f6;
---color-border: #cbd8d1;
---color-danger: #a52a2a;
---shadow-card: 0 0.5rem 1.5rem rgb(23 33 27 / 10%);
+--color-background: #f4f8fb;
+--color-border: #d0dbe5;
+--color-danger: #d32f2f;
+--shadow-card: 0 0.5rem 1.5rem rgba(21, 101, 192, 0.08);
 --radius-small: 0.5rem;
 --radius-medium: 0.9rem;
 --radius-large: 1.4rem;
@@ -122,7 +122,7 @@ text-decoration-thickness: 0.2em;
 .hero {
 padding-block: clamp(3rem, 10vw, 7rem);
 background:
-linear-gradient(135deg, rgb(232 245 239 / 95%), rgb(255 255 255 / 92%));
+linear-gradient(135deg, #e3f2fd, #f4f8fb);
 }
 .hero-layout {
 display: grid;
